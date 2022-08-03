@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700&display=swap');
+
+:root{
+    --dark-background: #0F0F0F;
+    --lightDark-background: #2b2b2b;
+    --addTask-button: #0e9a8c;
+    --removeTask-button: #F24957;
+    --editTask-button: #6950E5;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--dark-background);
+    color: #FFF;
+}
+
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.taskList{
+    padding: 1rem;
+}
+
+
+.taskList h2{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--lightDark-background);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.text{
+    margin-left: 0.5rem;
+    color: #FFF;
+    font-size: 1.1rem;
+    display: block;
+    transition: .35s;
+    font-size: 1.1rem;
+}
+
+.content {
+    flex: 1 1 0%;
+    width: 700px;
+}
+
+.content input:not(:read-only){
+    color: #6950E5;
+}
+
+.actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    padding: 1rem;
+    font-size: 0.92rem;
+    border-radius: 10px;
+}
+
+.editButton{
+    background-color: var(--editTask-button);
+    font-weight: 600;
+    color: #FFF;
+    transition: all .2s ease-in-out;
+}
+
+.deleteButton{
+    background-color: var(--removeTask-button);
+    font-weight: 600;
+    color: #FFF;
+    transition: all .2s ease-in-out;
+}
+
+.deleteButton:hover, .editButton:hover{
+    transform: scale(0.9);
+}
+
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
+
+#newTaskForm{
+    display: flex;
+}
+
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+}
+
+input{
+    background: none;
+}
+
+
+#newTaskInput{
+    flex: 1 1 0%;
+    background-color: var(--lightDark-background);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: #FFF;
+    font-size: 1.1rem;
+}
+
+#newTaskInput::placeholder{
+    font-style: italic;
+}
+
+#addNewTask{
+    color: #FFF;
+    background-color: var(--addTask-button);
+    padding: 1rem;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+#addNewTask:hover{
+    transform: scale(0.95);
+}
+
+
+
+
