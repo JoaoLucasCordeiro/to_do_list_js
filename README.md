@@ -6,3 +6,4 @@
 
 ![toDoList - print](https://user-images.githubusercontent.com/89361241/182719858-ab7f0bfd-5b6c-46d1-942e-2ed07f789863.png)
 
+<p> <strong>Link do projeto:</strong> https://todolistlucascordeiro.netlify.app </p>
